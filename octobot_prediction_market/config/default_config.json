@@ -1,0 +1,24 @@
+{
+  "backtesting": {
+      "files": []
+  },
+  "exchanges": {},
+  "services": {
+        "web": {
+            "auto-open-in-web-browser": true
+        }
+  },
+  "notification":{
+    "global-info": true,
+    "price-alerts": true,
+    "trades": true,
+    "trading-script-alerts": true,
+    "other": true,
+    "notification-type": [
+      "web"
+    ]
+  },
+  "profile": "prediction_market",
+  "accepted_terms": false,
+  "distribution": "prediction_market"
+}
