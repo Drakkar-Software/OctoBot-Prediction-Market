@@ -1,5 +1,2 @@
 # Drakkar-Software requirements
 OctoBot[full]==2.0.15
-
-# Temporary requirement while we don't have an equivalent of https://docs.polymarket.com/developers/CLOB/clients/methods-l1#deriveapikey
-py-clob-client==0.32.0
