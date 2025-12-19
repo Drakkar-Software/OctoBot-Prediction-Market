@@ -1,7 +1,7 @@
 # Crypto Prediction Market Trading Bot
-[![PyPI](https://img.shields.io/pypi/v/octobot_prediction_market.svg?logo=pypi)](https://pypi.org/project/octobot_prediction_market)
+<!-- [![PyPI](https://img.shields.io/pypi/v/octobot_prediction_market.svg?logo=pypi)](https://pypi.org/project/octobot_prediction_market)
 [![Dockerhub](https://img.shields.io/docker/pulls/drakkarsoftware/octobot.svg?logo=docker)](https://hub.docker.com/r/drakkarsoftware/octobot)
-[![OctoBot-CI](https://github.com/Drakkar-Software/OctoBot-prediction-market/workflows/OctoBot-prediction-market-CI/badge.svg)](https://github.com/Drakkar-Software/OctoBot-prediction-market/actions)
+[![OctoBot-CI](https://github.com/Drakkar-Software/OctoBot-prediction-market/workflows/OctoBot-prediction-market-CI/badge.svg)](https://github.com/Drakkar-Software/OctoBot-prediction-market/actions) -->
 
 [![OctoBot](https://img.shields.io/badge/dynamic/json.svg?&url=https://octobot.cloud/api/community/stats&query=$.total_bots&color=blue&label=Installed%20OctoBots)]()
 [![Telegram Chat](https://img.shields.io/badge/telegram-chat-green.svg?logo=telegram&label=Telegram)](https://t.me/octobot_trading)
