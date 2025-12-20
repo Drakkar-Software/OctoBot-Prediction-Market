@@ -1,5 +1,5 @@
 Thank you for sending your pull request. 
-But first, have you included unit tests, and is your code PEP8 conformant? [More details](https://github.com/Drakkar-Software/OctoBot-Prediction-Market/blob/dev/CONTRIBUTING.md)
+But first, have you included unit tests, and is your code PEP8 conformant? [More details](https://github.com/Drakkar-Software/OctoBot-Prediction-Market/blob/master/CONTRIBUTING.md)
 
 ## Summary
 Explain in one sentence the goal of this PR
