@@ -95,7 +95,7 @@ OctoBot Prediction Market can be deployed on the cloud or for free on your compu
 This is the easiest way to download and install OctoBot Prediction Market on your computer or server. The latest release executables for Windows, macOS, Linux and Raspberry Pi are automatically built and pushed to the [releases](https://github.com/Drakkar-Software/OctoBot-prediction-market/releases) page.
 
 ### Using the OctoBot Prediction Market Docker image
-You can also install OctoBot Prediction Market using the [OctoBot Prediction Market Docker image](https://hub.docker.com/r/drakkarsoftware/octobot).
+You can also install OctoBot Prediction Market using the [OctoBot Prediction Market Docker image](https://hub.docker.com/r/drakkarsoftware/octobot). OctoBot Prediction Market is available under the `predictionmarket` tag of the OctoBot Docker image
 
 Docker install in one line:
 ```sh
