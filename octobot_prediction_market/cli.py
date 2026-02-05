@@ -13,7 +13,16 @@
 #
 #  You should have received a copy of the GNU General Public
 #  License along with OctoBot. If not, see <https://www.gnu.org/licenses/>.
+import sys
+import octobot.cli
+
+import octobot_prediction_market.constants
 
 
 def main():
-    print("WIP")
+    # Start OctoBot with a default config file configured to use
+    # the prediction market distribution and profile
+    octobot.cli.main(
+        sys.argv[1:],
+        default_config_file=octobot_prediction_market.constants.DEFAULT_CONFIG_FILE
+    )

@@ -1,0 +1,16 @@
+name: OctoBot-Prediction-Market-Docker
+on:
+  push:
+    branches:
+      - "master"
+      - "dev"
+    tags:
+      - "*"
+  pull_request:
+
+jobs:
+  docker:
+    uses: Drakkar-Software/.github/.github/workflows/docker_workflow.yml@master
+    with:
+      distribution_name: prediction-market
+    secrets: inherit
