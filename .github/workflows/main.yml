@@ -67,7 +67,7 @@ jobs:
       contents: read
     needs: tests
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
-    uses: Drakkar-Software/.github/.github/workflows/python3_sdist_workflow.yml@v1
+    uses: Drakkar-Software/.github/.github/workflows/python3_sdist_workflow.yml@master
     secrets:
       PYPI_OFFICIAL_UPLOAD_URL: ${{ secrets.PYPI_OFFICIAL_UPLOAD_URL }}
       PYPI_USERNAME: __token__
@@ -81,6 +81,6 @@ jobs:
       - lint
       - tests
       - publish
-    uses: Drakkar-Software/.github/.github/workflows/failure_notify_workflow.yml@v1
+    uses: Drakkar-Software/.github/.github/workflows/failure_notify_workflow.yml@master
     secrets:
       DISCORD_GITHUB_WEBHOOK: ${{ secrets.DISCORD_GITHUB_WEBHOOK }}

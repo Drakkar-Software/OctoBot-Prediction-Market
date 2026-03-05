@@ -15,7 +15,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    uses: Drakkar-Software/.github/.github/workflows/docker_workflow.yml@v1
+    uses: Drakkar-Software/.github/.github/workflows/docker_workflow.yml@master
     with:
       distribution_name: prediction-market
     secrets: inherit
