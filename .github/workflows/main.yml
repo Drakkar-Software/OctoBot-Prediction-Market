@@ -5,9 +5,13 @@ on:
       - '*'
   pull_request:
 
+permissions: read-all
+
 jobs:
   lint:
     name: ${{ matrix.os }}${{ matrix.arch }} - Python ${{ matrix.version }} - lint
+    permissions:
+      contents: read
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -34,6 +38,8 @@ jobs:
 
   tests:
     name: ${{ matrix.os }}${{ matrix.arch }}  - Python - ${{ matrix.python }} - tests
+    permissions:
+      contents: read
     needs: lint
     runs-on: ${{ matrix.os }}
     strategy:
@@ -57,20 +63,24 @@ jobs:
       run: pytest --cov=. --cov-config=.coveragerc --durations=0 -rw tests
 
   publish:
+    permissions:
+      contents: read
     needs: tests
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
-    uses: Drakkar-Software/.github/.github/workflows/python3_sdist_workflow.yml@master
+    uses: Drakkar-Software/.github/.github/workflows/python3_sdist_workflow.yml@v1
     secrets:
       PYPI_OFFICIAL_UPLOAD_URL: ${{ secrets.PYPI_OFFICIAL_UPLOAD_URL }}
       PYPI_USERNAME: __token__
       PYPI_PASSWORD: ${{ secrets.PYPI_TOKEN }}
 
   notify:
+    permissions:
+      contents: read
     if: ${{ failure() }}
     needs:
       - lint
       - tests
       - publish
-    uses: Drakkar-Software/.github/.github/workflows/failure_notify_workflow.yml@master
+    uses: Drakkar-Software/.github/.github/workflows/failure_notify_workflow.yml@v1
     secrets:
       DISCORD_GITHUB_WEBHOOK: ${{ secrets.DISCORD_GITHUB_WEBHOOK }}

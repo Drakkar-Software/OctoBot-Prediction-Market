@@ -8,9 +8,14 @@ on:
       - "*"
   pull_request:
 
+permissions: read-all
+
 jobs:
   docker:
-    uses: Drakkar-Software/.github/.github/workflows/docker_workflow.yml@master
+    permissions:
+      contents: read
+      packages: write
+    uses: Drakkar-Software/.github/.github/workflows/docker_workflow.yml@v1
     with:
       distribution_name: prediction-market
     secrets: inherit
