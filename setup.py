@@ -25,7 +25,7 @@ with open('README.md', encoding='utf-8') as f:
 
 
 REQUIRED = open('requirements.txt').readlines()
-REQUIRES_PYTHON = '>=3.10'
+REQUIRES_PYTHON = '>=3.13'
 
 setup(
     name=PROJECT_NAME.lower().replace("-", "_"),
@@ -58,6 +58,6 @@ setup(
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
-        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.13',
     ],
 )
