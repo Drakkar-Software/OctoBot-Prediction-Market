@@ -17,4 +17,4 @@
 
 PROJECT_NAME = "OctoBot-Prediction-Market"
 AUTHOR = "Drakkar-Software"
-VERSION = "2.0.16"  # major.minor.revision
+VERSION = "2.1.0"  # major.minor.revision
