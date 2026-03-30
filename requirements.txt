@@ -1,2 +1,2 @@
 # Drakkar-Software requirements
-OctoBot[full]==2.1.0
+OctoBot[full]==2.1.1
